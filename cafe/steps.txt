@@ -1,0 +1,71 @@
+To set this up first go to this location here:
+
+C:\Windows\System32\drivers\etc (Select the hosts file and right click - open with visual studio code.
+
+Then un comment this section here:
+
+Before: # 127.0.0.1 localhost
+
+Change to this:
+
+After:
+
+127.0.0.1 cafe.local
+
+To save do Ctrl+S to save and it will say error. You want to click retry as admin click yes and it should save. 
+If not turn off the antivirus.
+
+------------------------------------------------------
+
+Next we setup a virtual server in apache. (MAKE SURE TO TURN OFF XAMPP INCLUDING APACHE AND MYSQL)
+
+Go to this location here: 
+
+C:\xampp\apache\conf\extra (Select the httpd-vhosts.conf file and right click - open with visual studio code.
+
+Then go to the very bottom and you will see this code:
+
+
+##<VirtualHost *:80>
+    ##ServerAdmin webmaster@dummy-host.example.com
+    ##DocumentRoot "C:/xampp/htdocs/dummy-host.example.com"
+    ##ServerName dummy-host.example.com
+    ##ServerAlias www.dummy-host.example.com
+    ##ErrorLog "logs/dummy-host.example.com-error.log"
+    ##CustomLog "logs/dummy-host.example.com-access.log" common
+##</VirtualHost>
+
+
+
+You want to change it to this:
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@cafe.local
+    DocumentRoot "C:/xampp/htdocs/cafe/"
+    ServerName cafe.local
+    ErrorLog "logs/cafe.local-error.log"
+    CustomLog "logs/cafe.local-access.log" common
+</VirtualHost>
+
+To save do Ctrl+S to save and it will say error. You want to click retry as admin click yes and it should save. 
+If not turn off the antivirus.
+
+--------------------------------------------------------
+
+Setting up the code - Download the cafe.zip file
+
+And save it to this location here:
+
+C:\xampp\htdocs
+
+Extract your cafe.zip:
+
+C:\xampp\htdocs\cafe (make sure that the extracted cafe folder has another cafe folder inside it. It should just be cafe w/ app, public, config folders and other files)
+
+Open the cafe folder in Visual Studio Code:
+
+Go to apps\core\Database.phpo and update any codes like the password since it might be different to mine.
+
+----------------------------------------------------------
+
+To run the website go to cafe.local/home 
