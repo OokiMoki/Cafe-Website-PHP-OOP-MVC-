@@ -1,0 +1,525 @@
+/* Imports of Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins&display=swap');
+/* End of Imports */
+
+/* Start of Landing Page Gloabl */
+/* Resetting default styles for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* START OF MAIN PAGE SECTION */
+/* Style for the background image */
+.background-container {
+    background-image: url('../../assets/about/main.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color to white */
+    z-index: 2;
+}
+
+.main-heading-text {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+    
+.main-sub-heading {
+    font-size: 25px;
+    font-family: "poppins", serif;
+    line-height: 1;
+    z-index: 2;
+}
+
+.main-read-more-button {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 60%;
+    left: 46%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px; /* Add 5px spacing below the subheading text */
+}
+
+.read-more-button {
+    background-color: #FF6B00; /* Set button background color */
+    border: none;
+    color: white; /* Set text color to white */
+    padding: 8px 30px; /* Set button padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out; /* Animation */
+}
+
+.read-more-button:hover {
+    background-color: #FF5500; /* Button color on hover */
+    transform: translateY(-5px);
+}
+
+/* START OF NAVBAR SECTION HERE */
+/* Style for the navbar */
+.nav {
+    background-color: transparent; /* Making the background of the navbar transparent */
+    position: absolute; /* Position the navbar over the background */
+    width: 100%; /* Full width */
+    display: flex;
+    padding: 56px 120px;
+    align-items: center;
+    gap: 740px;  
+}
+      
+.ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+    
+.li {
+margin-right: 35px; /* Add some spacing between list items */
+
+}
+    
+    /* Style for the links */
+.li a {
+    text-decoration: none;
+    color: white; /* White text color for links */
+    font-size: 14px;
+    font-family: "poppins";
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out;
+    display: inline-block;
+    position: relative;
+}
+
+.li a:hover {
+    transform: translateY(-2px);
+    }
+
+.dinos {
+    color: white; /* Set the text color to white */
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    margin-right: 740px;
+}
+/* END OF MAIN SECTION HERE */
+
+/* START OF ABOUT US SECTION */
+.our-history-container {
+    height: 763px;
+    background: linear-gradient(180deg, rgba(119, 90, 15, 0.72) 0%, rgba(62, 53, 23, 0.00) 100%);
+}
+
+.our-history-image {
+    background-image: url(../../assets/about/our-history.jpg);
+    width: 337px;
+    height: 571px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 815px;
+    margin-left: 43%;
+    border-radius: 10px;
+}
+
+.our-history-image2 {
+    background-image: url(../../assets/about/our-history2.jpg);
+    width: 337px;
+    height: 571px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 815px;
+    margin-left: 70%;
+    border-radius: 10px;
+}
+
+.our-history-text {
+    text-align: left; /* align text format */
+    float: left;
+    margin-left: 47px;
+    margin-top: 67px;
+    width: 511px;
+    height: 448px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.our-history-heading-text {
+    color: #2C2C2C;
+    font-family: "lalezar";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+.our-history-heading-text::after {
+    content: ""; /* Create a content-less pseudo-element */
+    display: block; /* Make it a block-level element */
+    width: 399px; /* Adjust the width of the line as needed */
+    height: 4px; /* Adjust the height and thickness of the line as needed */
+    background: #FF6B00; /* Line color */
+    position: absolute; /* Position absolutely within the relative parent */
+    left: 0; /* Position the line at the left edge of the parent */
+    top: 110px;
+}
+
+.our-history-sub-heading {
+    color: black;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.our-history-button {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 175%;
+    left: 0%;
+    right: 85%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Add 5px spacing below the subheading text */
+}
+.history-button {
+    background-color: #FF6B00;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out;
+    margin-top: 10px;
+}
+
+.history-button:hover {
+    background-color: #FF5500;
+    transform: translateY(-5px);
+}
+/* END OF ABOUT US SECTION */
+
+/* START OF OUR WORKERS SECTION */
+.our-workers-container {
+    height: 729px;
+    background: linear-gradient(180deg, rgba(255, 254, 252, 0.92) 0%, rgba(119, 90, 15, 0.72) 100%);
+}
+
+.our-workers-image {
+    background-image: url(../../assets/about/our-workers.jpg);
+    width: 334px;
+    height: 582px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 227%;
+    margin-left: 45px;
+    border-radius: 10px;
+}
+
+.our-workers-image2 {
+    background-image: url(../../assets/about/our-workers2.jpg);
+    width: 334px;
+    height: 582px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 227%;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+.our-workers-text {
+    text-align: left; /* align text format */
+    float: right;
+    margin-right: 98px;
+    margin-top: 67px;
+    width: 527px;
+    height: 118px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.our-workers-heading-text {
+    color: #2C2C2C;
+    font-family: "lalezar";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+.our-workers-heading-text::after {
+    content: ""; /* Create a content-less pseudo-element */
+    display: block; /* Make it a block-level element */
+    width: 440px; /* Adjust the width of the line as needed */
+    height: 4px; /* Adjust the height and thickness of the line as needed */
+    background: #FF6B00; /* Line color */
+    position: absolute; /* Position absolutely within the relative parent */
+    left: 6px; /* Position the line at the left edge of the parent */
+    top: 110px;
+}
+
+.our-workers-sub-heading {
+    color: black;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.our-workers-button {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 273%;
+    left: 0%;
+    right: -23.5%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Add 5px spacing below the subheading text */
+}
+.workers-button {
+    background-color: #FF6B00;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out;
+    margin-top: 10px;
+}
+
+.workers-button:hover {
+    background-color: #FF5500;
+    transform: translateY(-5px);
+}
+/* END OF ABOUT US SECTION */
+
+/* START OF OUR ROASTS SECTION */
+.our-roasts-container {
+    height: 696px;
+    background: linear-gradient(180deg, rgba(119, 90, 15, 0.72) 0%, #FFF9EA 100%, #FFF9EA 100%);
+}
+
+.our-roasts-image {
+    background-image: url(../../assets/about/our-roasts.jpg);
+    width: 334px;
+    height: 582px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 333%;
+    margin-left: 714px;
+    border-radius: 10px;
+}
+
+.our-roasts-image2 {
+    background-image: url(../../assets/about/our-roasts2.jpg);
+    width: 285px;
+    height: 232px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 333%;
+    margin-left: 1100px;
+    border-radius: 10px;
+}
+
+.our-roasts-image3 {
+    background-image: url(../../assets/about/our-roasts3.jpg);
+    width: 285px;
+    height: 232px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 383%;
+    margin-left: 1100px;
+    border-radius: 10px;
+}
+
+.our-roasts-text {
+    text-align: left; /* align text format */
+    float: left;
+    margin-left: 68px;
+    margin-top: 81px;
+    width: 527px;
+    height: 118px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.our-roasts-heading-text {
+    color: #2C2C2C;
+    font-family: "lalezar";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+.our-roasts-heading-text::after {
+    content: ""; /* Create a content-less pseudo-element */
+    display: block; /* Make it a block-level element */
+    width: 390px; /* Adjust the width of the line as needed */
+    height: 4px; /* Adjust the height and thickness of the line as needed */
+    background: #FF6B00; /* Line color */
+    position: absolute; /* Position absolutely within the relative parent */
+    left: 6px; /* Position the line at the left edge of the parent */
+    top: 110px;
+}
+
+.our-roasts-sub-heading {
+    color: black;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.our-roasts-button {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 393%;
+    left: 67px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Add 5px spacing below the subheading text */
+}
+.roast-button {
+    background-color: #FF6B00;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out;
+    margin-top: 10px;
+}
+
+.roast-button:hover {
+    background-color: #FF5500;
+    transform: translateY(-5px);
+}
+/* END OF ABOUT US SECTION */
+
+/* START OF FOOTER SECTION */
+.main-page-footer-container {
+    height: 291px;
+    background-color: black;
+}
+
+.main-footer-text {
+    text-align: left; /* align text format */
+    float: left;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: auto;
+    flex-shrink: 0;
+    position: relative;
+    top: 130px;
+    left: 143px;
+}
+
+.main-footer-heading-text {
+    color: white;
+    text-align: left;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.main-footer-sub-heading {
+    color: #565656;
+    text-align: left;
+    font-family: "poppins";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main-footer-button {
+    position: relative;
+    top: 50px;
+    left: 143px;
+}
+
+.main-footer-logo-button {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    font-family: "poppins";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+
+}
+
+.main-footer-logo-button:after {
+    content: ""; /* Create a content-less pseudo-element */
+    display: block; /* Make it a block-level element */
+    width: 1200px; /* Adjust the width of the line as needed */
+    height: 2px; /* Adjust the height and thickness of the line as needed */
+    background: white; /* Line color */
+    position: absolute; /* Position absolutely within the relative parent */
+    left: 0px; /* Position the line at the left edge of the parent */
+    top: 80px;
+}
+
+.footer-payment-image {
+    background: url(../../assets/about/Cards\ Payment.png);
+    width: 435px;
+    height: 96px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 430%;
+    left: 61.7%;
+}
+/* END OF FOOTER SECTION */

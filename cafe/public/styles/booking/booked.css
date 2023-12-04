@@ -1,0 +1,18 @@
+/* Add specific styles for this page if needed */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}

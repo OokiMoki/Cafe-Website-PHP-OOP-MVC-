@@ -1,0 +1,370 @@
+/* Imports of Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins&display=swap');
+/* End of Imports */
+
+/* Start of Landing Page Gloabl */
+/* Resetting default styles for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* START OF MAIN PAGE SECTION */
+/* Style for the background image */
+.background-container {
+    background-image: url('../../assets/booking/main.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color to white */
+    z-index: 2;
+}
+
+.main-heading-text {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+    
+.main-sub-heading {
+    font-size: 25px;
+    font-family: "poppins", serif;
+    line-height: 1;
+    z-index: 2;
+}
+
+.main-book-now-button {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 60%;
+    left: 46%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px; /* Add 5px spacing below the subheading text */
+}
+
+.book-now-button {
+    background-color: #FF6B00; /* Set button background color */
+    border: none;
+    color: white; /* Set text color to white */
+    padding: 8px 30px; /* Set button padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out; /* Animation */
+}
+
+.book-now-button:hover {
+    background-color: #FF5500; /* Button color on hover */
+    transform: translateY(-5px);
+}
+
+/* START OF NAVBAR SECTION HERE */
+/* Style for the navbar */
+.nav {
+    background-color: transparent; /* Making the background of the navbar transparent */
+    position: absolute; /* Position the navbar over the background */
+    width: 100%; /* Full width */
+    display: flex;
+    padding: 56px 120px;
+    align-items: center;
+    gap: 740px;  
+}
+      
+.ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+    
+.li {
+margin-right: 35px; /* Add some spacing between list items */
+
+}
+    
+    /* Style for the links */
+.li a {
+    text-decoration: none;
+    color: white; /* White text color for links */
+    font-size: 14px;
+    font-family: "poppins";
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out;
+    display: inline-block;
+    position: relative;
+}
+
+.li a:hover {
+    transform: translateY(-2px);
+    }
+
+.dinos {
+    color: white; /* Set the text color to white */
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    margin-right: 740px;
+}
+/* END OF MAIN SECTION HERE */
+
+/* START OF BOOKING FORM HERE */
+.table-booking-form-container {
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookingForm {
+    width: 100%;
+    max-width: 994.4px;
+    height: 640.43px;
+    box-sizing: border-box;
+    padding: 70px;
+}
+
+/* Date Button */
+#date {
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+#date::placeholder {
+    color: #555; 
+}
+
+/* Time Button */
+#time {
+    width: 380px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+#time option[value=""][disabled] {
+    display: none;
+}
+#time::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+#time:focus::after {
+    content: '\25B2'; /* Unicode for up arrow */
+}
+
+/** First Name Button */
+#firstName {
+    margin-right: 40px;
+    margin-top: 36px;
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+}
+#firstName::placeholder {
+    color: #555; 
+}
+
+/* Last Name Button */
+#lastName {
+    margin-left: 30px;
+    margin-top: 36px;
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+}
+#lastName::placeholder {
+    color: #555; 
+}
+
+/* Adults Button */
+#adults {
+    margin-right: 40px;
+    margin-top: 36px;
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+}
+#adults::placeholder {
+    color: #555; 
+}
+
+/* Children Button */
+#children {
+    margin-left: 30px;
+    margin-top: 36px;
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+}
+#children::placeholder {
+    color: #555; 
+}
+
+/* Phone Button */
+#phone {
+    margin-right: 40px;
+    margin-top: 36px;
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+}
+#phone::placeholder {
+    color: #555; 
+}
+
+/* Email Button */
+#email {
+    margin-left: 30px;
+    margin-top: 36px;
+    width: 380px;
+    height: 40px;
+    border-radius: 10px;
+}
+#email::placeholder {
+    color: #555; 
+}
+
+/* Requests Button */
+#requests {
+    margin-top: 36px;
+    width: 838px;
+    height: 136px;
+    border-radius: 10px;
+}
+#requests::placeholder {
+    color: #555; 
+}
+
+/* Reserve Button */
+.booking-reserve-button {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    top: 172%;
+    left: 44.8%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px; /* Add 5px spacing below the subheading text */
+}
+
+.reserve-button {
+    background-color: #FF6B00; /* Set button background color */
+    border: none;
+    color: white; /* Set text color to white */
+    padding: 8px 30px; /* Set button padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 350ms ease-in-out; /* Animation */
+}
+
+.reserve-button:hover {
+    background-color: #FF5500; /* Button color on hover */
+    transform: translateY(-5px);
+}
+
+/* START OF FOOTER SECTION */
+.main-page-footer-container {
+    height: 291px;
+    background-color: black;
+}
+
+.main-footer-text {
+    text-align: left; /* align text format */
+    float: left;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: auto;
+    flex-shrink: 0;
+    position: relative;
+    top: 130px;
+    left: 143px;
+}
+
+.main-footer-heading-text {
+    color: white;
+    text-align: left;
+    font-family: "poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.main-footer-sub-heading {
+    color: #565656;
+    text-align: left;
+    font-family: "poppins";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main-footer-button {
+    position: relative;
+    top: 50px;
+    left: 143px;
+}
+
+.main-footer-logo-button {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    font-family: "poppins";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+
+}
+
+.main-footer-logo-button:after {
+    content: ""; /* Create a content-less pseudo-element */
+    display: block; /* Make it a block-level element */
+    width: 1200px; /* Adjust the width of the line as needed */
+    height: 2px; /* Adjust the height and thickness of the line as needed */
+    background: white; /* Line color */
+    position: absolute; /* Position absolutely within the relative parent */
+    left: 0px; /* Position the line at the left edge of the parent */
+    top: 80px;
+}
+
+.footer-payment-image {
+    background: url(../../assets/booking/Cards\ Payment.png);
+    width: 435px;
+    height: 96px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 193.5%;
+    left: 61.7%;
+}
+/* END OF FOOTER SECTION */
