@@ -1,5 +1,6 @@
-Café Website…
-About this project:
+**Café Website…**
+
+_**About this project:**_
 Hey there, just wanted to share this project I've been diving into – my own café website built with PHP. I took the liberty of creating a customized MVC Framework, employing Object-Oriented Programming principles and integrating a MySQL database.
 
 The website encompasses the essential features of a café platform, featuring an admin dashboard tailored for internal navigation by employees. This facilitates CRUD operations, allowing for the management of menus, accounts, and timetables.
