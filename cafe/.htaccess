@@ -1,0 +1,70 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /cafe/
+
+    # If you want to internally rewrite the URL without changing the address bar
+
+    # Login url goes to dashboard
+    RewriteRule ^login$ /app/views/login/login.php [L]
+    # Dashboard url
+    RewriteRule ^dashboard/admin_dashboard$ /app/views/dashboard/admin_dashboard.php [L]
+    # Registration url
+    RewriteRule ^registration /app/views/dashboard/registration.php [L]
+    
+    # Dashboard timetable url
+    RewriteRule ^dashboard/timetable/timetable /app/views/dashboard/timetable/timetable.php [L]
+    # Dashboard timetable create url
+    RewriteRule ^dashboard/timetable/create /app/views/dashboard/timetable/create.php [L]
+    # Dashboard timetable manage url
+    RewriteRule ^dashboard/timetable/manage /app/views/dashboard/timetable/manage.php [L]
+    # Dashboard timetable edit url
+    RewriteRule ^dashboard/timetable/edit /app/views/dashboard/timetable/edit.php [L]
+    # Dashboard timetable view url
+    RewriteRule ^dashboard/timetable/view /app/views/dashboard/timetable/view.php [L]
+    # Dashboard timetable personal url
+    RewriteRule ^dashboard/timetable/my-timetable /app/views/dashboard/timetable/my-timetable.php [L]
+    
+    # Dashboard accounts create url
+    RewriteRule ^dashboard/accounts/create /app/views/dashboard/accounts/create.php [L]
+    # Dashboard accounts manager url
+    RewriteRule ^dashboard/accounts/manage /app/views/dashboard/accounts/manage.php [L]
+    # Dashboard accounts edit url
+    RewriteRule ^dashboard/accounts/edit /app/views/dashboard/accounts/edit.php [L]
+    # Dashboard accounts view url
+    RewriteRule ^dashboard/accounts/view /app/views/dashboard/accounts/view.php [L]
+    
+    # Dashboard menu create url
+    RewriteRule ^dashboard/menu/create /app/views/dashboard/menu/create.php [L]
+    # Dashboard menu manage url
+    RewriteRule ^dashboard/menu/manage /app/views/dashboard/menu/manage.php [L]
+    # Dashboard menu edit url
+    RewriteRule ^dashboard/menu/edit /app/views/dashboard/menu/edit.php [L]
+    # Dashboard menu view url
+    RewriteRule ^dashboard/menu/view /app/views/dashboard/menu/view.php [L]
+    
+    # Home page url
+    RewriteRule ^home /app/views/home/home.php [L]
+    # About page url
+    RewriteRule ^about /app/views/about/about.php [L]
+    # Booking page url
+    RewriteRule ^booking /app/views/booking/booking.php [L]
+    # Cart page url
+    RewriteRule ^cart /app/views/cart/cart.php [L]
+    
+    # RewriteRule ^cart/deliverycartconfirmed /app/views/cart/deliverycartconfirmed.php [L]
+    # RewriteRule ^cart/pickupcartconfirmed /app/views/cart/pickupcartconfirmed.php [L]
+
+    # Menu page url
+    RewriteRule ^menu$ /app/views/menu/menu.php [L]
+
+    # Breakfast menu url
+    RewriteRule ^menu/breakfast /app/views/menu/breakfast.php [L]
+    # Lunch menu url
+    RewriteRule ^menu/lunch /app/views/menu/lunch.php [L]
+    # Dinner menu url
+    RewriteRule ^menu/dinner /app/views/menu/dinner.php [L]
+    # Drinkss menu url
+    RewriteRule ^menu/drinks /app/views/menu/drinks.php [L]
+    
+    
+</IfModule>
